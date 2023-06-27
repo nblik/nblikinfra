@@ -1,0 +1,15 @@
+apiVersion: "v1"
+kind: "ConfigMap"
+metadata:
+  name: "react-frontend-config-a5zw"
+  namespace: "nblik"
+  labels:
+    app: "react-frontend"
+data:
+  API_BASE_URL: "https://api-dev.nblik.in/api/v1/"
+  NODE_ENV: "production"
+  NODE_MODULES_CACHE: "false"
+  NODE_VERBOSE: "false"
+  NPM_CONFIG_LOGLEVEL: "error"
+  REACT_APP_NAME: "nblik"
+  REACT_APP_VERSION: "1.2.8"

@@ -1,0 +1,50 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "backend-api"
+  namespace: "nblik"
+  labels:
+    app: "backend-api"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "backend-api"
+  template:
+    metadata:
+      labels:
+        app: "backend-api"
+    spec:
+      containers:
+      - name: "nblik-api-sha256-1"
+        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-api/nblik-api:latest"
+        command:
+        - "./docker_boot.sh"
+        envFrom:
+            - configMapRef:
+                name: api-backend-config-ccmj
+            - secretRef:
+                name: api-backend-secret
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "backend-api-hpa-f4do"
+  namespace: "nblik"
+  labels:
+    app: "backend-api"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "backend-api"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      target:
+        type: "Utilization"
+        averageUtilization: 80

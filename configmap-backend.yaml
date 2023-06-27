@@ -1,0 +1,46 @@
+apiVersion: v1
+data:  
+  POST_COUNT: "10"
+  CREDIT: "100"
+  RAILS_LOG_TO_STDOUT: enabled
+  APPLICATION_URL: https://api-dev.nblik.in/
+  REDIS_PROVIDER: REDIS_URL
+  POST_COMMENTS: "10"
+  MIN_BALANCE: "100"
+  RAILS_SERVE_STATIC_FILES: enabled
+  FIREBASE_OAUTH_URI: https://accounts.google.com/o/oauth2/auth
+  S3_BUCKET: nblickdevimages
+  AWS_REGION: ap-south-1
+  RAILS_ENV: staging
+  GOOGLE_CLIENT_ID: "1018892805469-9pos7as8m56dao395dg91d3c634i1mar.apps.googleusercontent.com"
+  FIREBASE_PRIVATE_KEY_ID: d8ea57fee323f96827eedd7f944bfaec8e21d96d
+  FRONTAPP_URL: https://beta.nblik.in/
+  POST_LIKES: "10"
+  SMTP_ADDRESS: email-smtp.ap-south-1.amazonaws.com
+  DISCUSSIONS: "10"
+  BADGE_CREDIT: "100"
+  ELASTIC_USER: elastic
+  FIREBASE_CLIENT_CERT_URL: https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-hsebf%40dev-nblik.iam.gserviceaccount.com
+  SMTP_DOMAIN: nblik.com
+  LANG: en_US.UTF-8
+  TEMPLATE_ID: nblik_videoconf_e425d837-4c68-4ad9-831b-6d485df469e7
+  RACK_ENV: development
+  RDS_PORT: "5432"
+  FIREBASE_SERVICE_EMAIL: firebase-adminsdk-hsebf@dev-nblik.iam.gserviceaccount.com
+  FIREBASE_PROJECT_ID: dev-nblik
+  PROJECT_ID: "1018892805469"
+  RDS_USERNAME: postgres
+  CLOUD_ID: https://search-stg-elastic-oi2kdpmd7kvvgdmrhuubg5pduy.ap-south-1.es.amazonaws.com/
+  FIREBASE_CERT_URL: https://www.googleapis.com/oauth2/v1/certs
+  FIREBASE_CLIENT_ID: "111984816448867977034"
+  RDS_HOSTNAME: "10.119.80.5"
+  FIREASE_TOKEN_URI: https://oauth2.googleapis.com/token
+  POST_VIEWS: "10"
+  REDIS_URL: "redis://10.63.9.92:6379"
+kind: ConfigMap
+metadata:
+
+  labels:
+    app: api-backend
+  name: api-backend-config-ccmj
+  namespace: nblik

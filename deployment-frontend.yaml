@@ -1,0 +1,78 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "react-frontend"
+  namespace: "nblik"
+  labels:
+    app: "react-frontend"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "react-frontend"
+  template:
+    metadata:
+      labels:
+        app: "react-frontend"
+    spec:
+      containers:
+      - name: "nblik-react-1"
+        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-react-frontend/nblik-react:latest"
+        env:
+        - name: "API_BASE_URL"
+          valueFrom:
+            configMapKeyRef:
+              key: "API_BASE_URL"
+              name: "react-frontend-config-a5zw"
+        - name: "NODE_ENV"
+          valueFrom:
+            configMapKeyRef:
+              key: "NODE_ENV"
+              name: "react-frontend-config-a5zw"
+        - name: "NODE_MODULES_CACHE"
+          valueFrom:
+            configMapKeyRef:
+              key: "NODE_MODULES_CACHE"
+              name: "react-frontend-config-a5zw"
+        - name: "NODE_VERBOSE"
+          valueFrom:
+            configMapKeyRef:
+              key: "NODE_VERBOSE"
+              name: "react-frontend-config-a5zw"
+        - name: "NPM_CONFIG_LOGLEVEL"
+          valueFrom:
+            configMapKeyRef:
+              key: "NPM_CONFIG_LOGLEVEL"
+              name: "react-frontend-config-a5zw"
+        - name: "REACT_APP_NAME"
+          valueFrom:
+            configMapKeyRef:
+              key: "REACT_APP_NAME"
+              name: "react-frontend-config-a5zw"
+        - name: "REACT_APP_VERSION"
+          valueFrom:
+            configMapKeyRef:
+              key: "REACT_APP_VERSION"
+              name: "react-frontend-config-a5zw"
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "react-frontend-hpa-8ohl"
+  namespace: "nblik"
+  labels:
+    app: "react-frontend"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "react-frontend"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      target:
+        type: "Utilization"
+        averageUtilization: 80
