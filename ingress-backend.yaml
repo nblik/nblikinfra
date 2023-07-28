@@ -23,8 +23,8 @@ metadata:
   name: backend-ingress
   namespace: "nblik"
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: dev-nblik-backend
-    networking.gke.io/managed-certificates: nblik-in-staging
+    kubernetes.io/ingress.global-static-ip-name: prod-nblik-backend
+    networking.gke.io/managed-certificates: nblik-com
     kubernetes.io/ingress.class: "gce"
 spec:
   defaultBackend:

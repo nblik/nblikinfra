@@ -1,0 +1,30 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "ruby-sidekiq"
+  namespace: "nblik"
+  labels:
+    app: "ruby-sidekiq"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "ruby-sidekiq"
+  template:
+    metadata:
+      labels:
+        app: "ruby-sidekiq"
+    spec:
+      containers:
+      - name: "nblik-ruby-sidekiq-sha256-1"
+        resources:
+          requests:
+            cpu: 1
+        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-api/nblik-api@sha256:0bc3c0dd1c4385635f2f3197093652da844cee868219a82c62a968e44f7ac760"
+        command: ["bundle","exec","sidekiq"] 
+        envFrom:
+            - configMapRef:
+                name: api-backend-config-ccmj
+            - secretRef:
+                name: api-backend-secret

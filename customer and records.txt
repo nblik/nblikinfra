@@ -1,0 +1,71 @@
+1. Customer: community.textr.tech.
+dnsResourceRecord:
+  data: b62a102e-49f6-464f-8ad9-734aa83c678d.7.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.textr.tech.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A
+
+
+2. Customer : highscore.triplearcade.in.
+  dnsResourceRecord:
+  data: 751d89a7-06f0-47fb-904b-573847d3970f.19.authorize.certificatemanager.goog.
+  name: _acme-challenge.highscore.triplearcade.in.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: highscore
+  type: A
+
+3. Customer: community.moniread.in
+  dnsResourceRecord:
+  data: 747b2bde-d9eb-457b-b6f8-d11423123c2c.9.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.moniread.in.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A
+
+4. Customer : community.gaganjeetsekhon.com
+dnsResourceRecord:
+  data: 2a2cb6b0-a27f-4ef5-9279-42142eaeaa1f.10.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.gaganjeetsekhon.com.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A
+
+5. Customer: community.justping.in
+dnsResourceRecord:
+  data: 6157c33a-ae59-442a-bd4c-447b3d8fc128.14.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.justping.in.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A
+
+
+6. Customer: community.voxprosoftware.io
+dnsResourceRecord:
+  data: e7d3b538-a98c-4aeb-89d9-34f53c2001b7.11.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.voxprosoftware.io.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A
+
+7. Customer: community.rebuildroots.in
+dnsResourceRecord:
+  data: 65bb33ab-6df1-4682-8694-a1e87d6f4c19.11.authorize.certificatemanager.goog.
+  name: _acme-challenge.community.rebuildroots.in.
+  type: CNAME
+  ---------------
+  data: 34.110.150.42
+  name: community
+  type: A

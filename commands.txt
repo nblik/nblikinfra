@@ -1,0 +1,7 @@
+$DOMAIN="community.rebuildroots.in"
+$DNAME="community-rebuildroots-in"
+gcloud certificate-manager dns-authorizations create "$DNAME"  --domain="$DOMAIN"
+gcloud certificate-manager dns-authorizations describe $DNAME
+gcloud certificate-manager certificates create "$DNAME" --domains="$DOMAIN" --dns-authorizations="$DNAME"
+gcloud certificate-manager maps entries create $DNAME --map="nblik" --certificates="$DNAME" --hostname="$DOMAIN"
+

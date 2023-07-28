@@ -1,0 +1,22 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'asia-south1-docker.pkg.dev/${PROJECT_ID}/nblik-api/nblik-api:dev','-t','asia-south1-docker.pkg.dev/${PROJECT_ID}/nblik-api/nblik-api:$BUILD_ID', '.']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'asia-south1-docker.pkg.dev/${PROJECT_ID}/nblik-api/nblik-api:dev']
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'asia-south1-docker.pkg.dev/${PROJECT_ID}/nblik-api/nblik-api:$BUILD_ID']
+
+  - name: 'gcr.io/cloud-builders/kubectl'
+    id: Deploy
+    args:
+    - 'set'
+    - 'image'
+    - 'deployment/backend-api'
+    - '-n'
+    - 'nblik'
+    - 'nblik-api-sha256-1=asia-south1-docker.pkg.dev/${PROJECT_ID}/nblik-api/nblik-api:$BUILD_ID'
+    env:
+    - 'CLOUDSDK_COMPUTE_REGION=asia-south1'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=stg-nblik-1'
