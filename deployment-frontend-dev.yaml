@@ -1,0 +1,28 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "react-frontend-dev"
+  namespace: "nblik-dev"
+  labels:
+    app: "react-frontend-dev"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "react-frontend-dev"
+  template:
+    metadata:
+      labels:
+        app: "react-frontend-dev"
+    spec:
+      containers:
+      - name: "nblik-react-dev"
+        resources:
+          requests:
+            cpu: 1       
+        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-react-frontend/nblik-react:dev"
+        imagePullPolicy: Always
+        command: ["yarn","run","start","-p","3001"]
+        envFrom:
+            - configMapRef:
+                name: react-frontend-config-dev

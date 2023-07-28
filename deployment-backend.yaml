@@ -18,7 +18,10 @@ spec:
     spec:
       containers:
       - name: "nblik-api-sha256-1"
-        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-api/nblik-api:latest"
+        resources:
+          requests:
+            cpu: 2
+        image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-api/nblik-api@sha256:0bc3c0dd1c4385635f2f3197093652da844cee868219a82c62a968e44f7ac760"
         command:
         - "./docker_boot.sh"
         envFrom:
@@ -39,7 +42,7 @@ spec:
     kind: "Deployment"
     name: "backend-api"
     apiVersion: "apps/v1"
-  minReplicas: 1
+  minReplicas: 3
   maxReplicas: 5
   metrics:
   - type: "Resource"

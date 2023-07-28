@@ -2,9 +2,8 @@
 apiVersion: networking.gke.io/v1
 kind: ManagedCertificate
 metadata:
-  name: nblik-com
-  namespace: "nblik"
+  name: beta-nblik-com
+  namespace: "nblik-dev"
 spec:
   domains:
-    - nblik.com
-    - api.nblik.com
+    - beta.nblik.com

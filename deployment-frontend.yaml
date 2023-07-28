@@ -17,6 +17,9 @@ spec:
     spec:
       containers:
       - name: "nblik-react-1"
+        resources:
+          requests:
+            cpu: 2        
         image: "asia-south1-docker.pkg.dev/nblik-auth/nblik-react-frontend/nblik-react:latest"
         env:
         - name: "API_BASE_URL"
@@ -67,7 +70,7 @@ spec:
     kind: "Deployment"
     name: "react-frontend"
     apiVersion: "apps/v1"
-  minReplicas: 1
+  minReplicas: 3
   maxReplicas: 5
   metrics:
   - type: "Resource"

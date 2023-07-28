@@ -23,8 +23,8 @@ metadata:
   name: react-frontend
   namespace: nblik
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: dev-nblik-frontend
-    networking.gke.io/managed-certificates: nblik-in-staging
+    kubernetes.io/ingress.global-static-ip-name: prod-nblik-frontend
+    networking.gke.io/managed-certificates: nblik-com
     kubernetes.io/ingress.class: "gce"
 spec:
   defaultBackend:
