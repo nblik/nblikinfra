@@ -1,76 +1,185 @@
 apiVersion: v1
-data:  
-  POST_COUNT: "10"
-  CREDIT: "50"
-  RAILS_LOG_TO_STDOUT: enabled
-  POST_COMMENTS: "10"
-  MIN_BALANCE: "100"
-  RAILS_SERVE_STATIC_FILES: enabled
-  FIREBASE_OAUTH_URI: https://accounts.google.com/o/oauth2/auth
-  S3_BUCKET: nblickdevimages
-  GCS_BUCKET: nblickdevimages
-  JANHIT_DHARMADYA_GOOGLE_CLIENT_ID: 693651760231-k8hesdr2d01dm4od4nuhinrpuujc4lgm.apps.googleusercontent.com
-  SHIVSENA_THAKRE_GOOGLE_CLIENT_ID: 358433722539-srds7fsf0h85k0m8ctcuv8ck0qckb639.apps.googleusercontent.com
-  CRIME_ASSAM_GOOGLE_CLIENT_ID: 1041893454504-dfeden5idv23g1uepgdtuplktp5ppf5b.apps.googleusercontent.com
-  LIVE_GOOGLE_CLIENT_ID: 1089705809623-iui1j5ivsnvbuai40169hpi23jllvj6q.apps.googleusercontent.com
+data:
   A1_SAMACHAAR_GOOGLE_CLIENT_ID: 631201737682-5ha3ra9qt6aekgs1m95c0ml5hnpdum0c.apps.googleusercontent.com
-  SHEMATTERS_GOOGLE_CLIENT_ID: 893715447461-j4aebinhg80a7m6ldo9a4c3vnlatqtdg.apps.googleusercontent.com
-  HAJIPUR_REFRIGERATION_GOOGLE_CLIENT_ID: 700884279414-o1cnu33415ecvjvdagjc7pnf7m229k05.apps.googleusercontent.com
-  SHIVA_RLP_GOOGLE_CLIENT_ID: 436202980965-4hj4ch6ooljojog8hdu14fvull0t7kg0.apps.googleusercontent.com
-  BJP_ZILA_SANJOYAK_GOOGLE_CLIENT_ID: 1035837699581-2l4ar2bhg9f60r9jacvkgujme2susfur.apps.googleusercontent.com
-  SEHYOG_WELFARE_FOUNDATION_GOOGLE_CLIENT_ID: 1029579395492-av1lgqsc6u7e13gt6u87bc0qj9og9eth.apps.googleusercontent.com
+  AKHIL_DIGAMBAR_GOOGLE_CLIENT_ID: 1031296456700-609a7fmf6at93m20ctledek5f21rprps.apps.googleusercontent.com
   AKHIL_SWANTANTRA_GOOGLE_CLIENT_ID: 224181432024-7sm8obhtvdmts945o0sf50of1rgredl6.apps.googleusercontent.com
-  VOX_GOOGLE_CLIENT_ID: 1034143085092-q38ptho0fqnboc98cu8891sq3m0m74pn.apps.googleusercontent.com
-  RASHTRIYA_SANGHATHAN_GOOGLE_CLIENT_ID: 1040462940102-kh0dbqveko7uclsbsumi2c1q0b0ceg7b.apps.googleusercontent.com
-  GARHWAL_GOOGLE_CLIENT_ID: 826996547596-79nnqmllj0ll8095lliv67gbrr0f58tm.apps.googleusercontent.com
-  LOK_JANSHAKTI_PARTY_GOOGLE_CLIENT_ID: 105126451566-jj8a35b8uqhg322tv2titophp3a7ph41.apps.googleusercontent.com
-  BHARAT_TIMES_GOOGLE_CLIENT_ID: 624870625956-38e5jcctklpe9pcimf0baf2g2p06nvdj.apps.googleusercontent.com
-  VISHWA_BAJRANG_DAL_GOOGLE_CLIENT_ID: 850844773240-ls2utj9tnv8f0mkrpesh9p21i4p2c542.apps.googleusercontent.com
-  RASHTRIYA_YUVA_JATAV_GOOGLE_CLIENT_ID: 763312477997-401gl2q4gt8gjosask4md9a6j3d74pug.apps.googleusercontent.com
-  THEDOGCIRCLE_GOOGLE_CLIENT_ID: 1044819264290-ju1ajlcnb1h5oek3vq07rckh532gim94.apps.googleusercontent.com
-  GOOGLE_CLIENT_ID: 962951941377-lfg8rnhvbddfefc7rtaqkkafq5bd3sk7.apps.googleusercontent.com
-  SUNRISE_CONSULTANCY_GOOGLE_CLIENT_ID: 192814708505-g0heok64o70uj8u5nvbalr0s9svpld3v.apps.googleusercontent.com
-  LADESH_RAJPUT_SANGH_GOOGLE_CLIENT_ID: 731329803320-gvs7e8gcnetk3bkts1g4td7p7sj93tgk.apps.googleusercontent.com
-  BHRASTACHAR_NEWS_GOOGLE_CLIENT_ID: 92387558743-asmps94lijtsgl467a3m7fm4rsi9q2qi.apps.googleusercontent.com
-  REBUILDROOTS_GOOGLE_CLIENT_ID: 444576343505-uhpltq1e563knor83s0qb0m08isitgs0.apps.googleusercontent.com
-  SANATAN_GYAN_SANSTHAN_GOOGLE_CLIENT_ID: 677690896381-8h2uun5ur8tf4g5vq1bu64h3tjosisk5.apps.googleusercontent.com
-  CHAINSUKH_JANWAR_GOOGLE_CLIENT_ID: 31435339526-pbm6ab5cbl4rrgej2oeliu1pe9m4vf4c.apps.googleusercontent.com
-  PARINDEY_FOUNDATION_GOOGLE_CLIENT_ID: 67043347006-5tgequjafvjnupncmfmb2srdajpgf47r.apps.googleusercontent.com
-  BAHUJAN_SAMAJ_PARTY_GOOGLE_CLIENT_ID: 64652129366-7vj0ajavlb5chb610eeu0sncckfoqtmo.apps.googleusercontent.com
-  FIREBASE_PRIVATE_KEY_ID: "0ae327276c3ed993833545819a72315b18c4d157"
-  AWS_REGION: ap-south-1
-  RAILS_ENV: production
-  FRONTAPP_URL: https://www.nblik.com
-  POST_LIKES: "10"
-  SMTP_ADDRESS: email-smtp.ap-south-1.amazonaws.com
-  DISCUSSIONS: "10"
-  BADGE_CREDIT: "100"
-  ELASTIC_USER: prod_elastic2
-  FIREBASE_CLIENT_CERT_URL: https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qqwjd%40nblikk.iam.gserviceaccount.com
-  SMTP_DOMAIN: nblik.com
-  LANG: en_US.UTF-8
-  TEMPLATE_ID: nblik_videoconf_e425d837-4c68-4ad9-831b-6d485df469e7
-  RACK_ENV: production
-  RDS_PORT: "5432"
-  FIREBASE_SERVICE_EMAIL: firebase-adminsdk-qqwjd@nblikk.iam.gserviceaccount.com
-  FIREBASE_PROJECT_ID: nblikk
-  PROJECT_ID: "962951941377"
-  RDS_USERNAME: postgres
-  RDS_DB_NAME: prod_nblik_db
-  CLOUD_ID: https://search-prod-nblik-45bhv3ds4du4qc6mzaq37sa5si.ap-south-1.es.amazonaws.com/
-  FIREBASE_CERT_URL: https://www.googleapis.com/oauth2/v1/certs
-  FIREBASE_CLIENT_ID: "116359567469435893090"
-  RDS_HOSTNAME: "10.87.176.3"
-  FIREASE_TOKEN_URI: https://oauth2.googleapis.com/token
-  POST_VIEWS: "10"
-  REDIS_URL: "redis://10.87.177.4:6379"
-  RAILS_MAX_THREADS: "30"
   APPLICATION_URL: https://api.nblik.com
-  REDIS_PROVIDER: REDIS_URL
+  AWS_REGION: ap-south-1
+  BADGE_CREDIT: "100"
+  BAHUJAN_SAMAJ_PARTY_GOOGLE_CLIENT_ID: 64652129366-7vj0ajavlb5chb610eeu0sncckfoqtmo.apps.googleusercontent.com
+  BHARAT_TIMES_GOOGLE_CLIENT_ID: 624870625956-38e5jcctklpe9pcimf0baf2g2p06nvdj.apps.googleusercontent.com
+  BHARTIYA_SAMAJ_SEWA_GOOGLE_CLIENT_ID: 257877913205-qc4hffs5he6sfevvruo0ba6ju0648rcf.apps.googleusercontent.com
+  BHRASTACHAR_NEWS_GOOGLE_CLIENT_ID: 92387558743-asmps94lijtsgl467a3m7fm4rsi9q2qi.apps.googleusercontent.com
+  BJP_ZILA_SANJOYAK_GOOGLE_CLIENT_ID: 1035837699581-2l4ar2bhg9f60r9jacvkgujme2susfur.apps.googleusercontent.com
+  CHAINSUKH_JANWAR_GOOGLE_CLIENT_ID: 31435339526-pbm6ab5cbl4rrgej2oeliu1pe9m4vf4c.apps.googleusercontent.com
+  CLOUD_ID: https://search-prod-nblik-45bhv3ds4du4qc6mzaq37sa5si.ap-south-1.es.amazonaws.com/
+  CREDIT: "50"
+  CRIME_ASSAM_GOOGLE_CLIENT_ID: 1041893454504-dfeden5idv23g1uepgdtuplktp5ppf5b.apps.googleusercontent.com
+  DIA_ARC_GOOGLE_CLIENT_ID: 1093405901238-ktmetjlamf093fc6aajne2f7jsq34rcu.apps.googleusercontent.com
+  DISCUSSIONS: "10"
+  ELASTIC_USER: prod_elastic2
+  FIREASE_TOKEN_URI: https://oauth2.googleapis.com/token
+  FIREBASE_CERT_URL: https://www.googleapis.com/oauth2/v1/certs
+  FIREBASE_CLIENT_CERT_URL: https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qqwjd%40nblikk.iam.gserviceaccount.com
+  FIREBASE_CLIENT_ID: "116359567469435893090"
+  FIREBASE_OAUTH_URI: https://accounts.google.com/o/oauth2/auth
+  FIREBASE_PRIVATE_KEY_ID: 0ae327276c3ed993833545819a72315b18c4d157
+  FIREBASE_PROJECT_ID: nblikk
+  FIREBASE_SERVICE_EMAIL: firebase-adminsdk-qqwjd@nblikk.iam.gserviceaccount.com
+  FRONTAPP_URL: https://www.nblik.com
+  GARHWAL_GOOGLE_CLIENT_ID: 826996547596-79nnqmllj0ll8095lliv67gbrr0f58tm.apps.googleusercontent.com
+  GCS_BUCKET: nblickdevimages
+  GOOGLE_CLIENT_ID: 962951941377-lfg8rnhvbddfefc7rtaqkkafq5bd3sk7.apps.googleusercontent.com
+  HAJIPUR_REFRIGERATION_GOOGLE_CLIENT_ID: 700884279414-o1cnu33415ecvjvdagjc7pnf7m229k05.apps.googleusercontent.com
+  JAAGA_VANSH_GOOGLE_CLIENT_ID: 292695335222-emfjsjlbvofqp4se82eav6elebsejmvd.apps.googleusercontent.com
+  JANHIT_DHARMADYA_GOOGLE_CLIENT_ID: 693651760231-k8hesdr2d01dm4od4nuhinrpuujc4lgm.apps.googleusercontent.com
+  LADESH_RAJPUT_SANGH_GOOGLE_CLIENT_ID: 731329803320-gvs7e8gcnetk3bkts1g4td7p7sj93tgk.apps.googleusercontent.com
+  LANG: en_US.UTF-8
+  LIVE_GOOGLE_CLIENT_ID: 1089705809623-iui1j5ivsnvbuai40169hpi23jllvj6q.apps.googleusercontent.com
+  LOK_JANSHAKTI_PARTY_GOOGLE_CLIENT_ID: 105126451566-jj8a35b8uqhg322tv2titophp3a7ph41.apps.googleusercontent.com
+  MAA_VINA_GOOGLE_CLIENT_ID: 69714012333-ii6a1151k2j1e4l28387ij0klthnd3jj.apps.googleusercontent.com
+  MIN_BALANCE: "100"
+  PARINDEY_FOUNDATION_GOOGLE_CLIENT_ID: 67043347006-5tgequjafvjnupncmfmb2srdajpgf47r.apps.googleusercontent.com
   POST_COMMENTS: "10"
+  POST_COUNT: "10"
+  POST_LIKES: "10"
+  POST_VIEWS: "10"
+  PROJECT_ID: "962951941377"
+  RACK_ENV: production
+  RAILS_ENV: production
+  RAILS_LOG_TO_STDOUT: enabled
+  RAILS_MAX_THREADS: "30"
+  RAILS_SERVE_STATIC_FILES: enabled
+  RASHTRIYA_SANGHATHAN_GOOGLE_CLIENT_ID: 1040462940102-kh0dbqveko7uclsbsumi2c1q0b0ceg7b.apps.googleusercontent.com
+  RASHTRIYA_YUVA_JATAV_GOOGLE_CLIENT_ID: 763312477997-401gl2q4gt8gjosask4md9a6j3d74pug.apps.googleusercontent.com
+  RDS_DB_NAME: prod_nblik_db
+  RDS_HOSTNAME: 10.87.176.3
+  RDS_PORT: "5432"
+  RDS_USERNAME: postgres
+  REBUILDROOTS_GOOGLE_CLIENT_ID: 444576343505-uhpltq1e563knor83s0qb0m08isitgs0.apps.googleusercontent.com
+  REDIS_PROVIDER: REDIS_URL
+  REDIS_URL: redis://10.87.177.4:6379
+  S3_BUCKET: nblickdevimages
+  SANATAN_GYAN_SANSTHAN_GOOGLE_CLIENT_ID: 677690896381-8h2uun5ur8tf4g5vq1bu64h3tjosisk5.apps.googleusercontent.com
+  SEHYOG_WELFARE_FOUNDATION_GOOGLE_CLIENT_ID: 1029579395492-av1lgqsc6u7e13gt6u87bc0qj9og9eth.apps.googleusercontent.com
+  SHEMATTERS_GOOGLE_CLIENT_ID: 893715447461-j4aebinhg80a7m6ldo9a4c3vnlatqtdg.apps.googleusercontent.com
+  SHIVA_RLP_GOOGLE_CLIENT_ID: 436202980965-4hj4ch6ooljojog8hdu14fvull0t7kg0.apps.googleusercontent.com
+  SHIVSENA_THAKRE_GOOGLE_CLIENT_ID: 358433722539-srds7fsf0h85k0m8ctcuv8ck0qckb639.apps.googleusercontent.com
+  SMTP_ADDRESS: email-smtp.ap-south-1.amazonaws.com
+  SMTP_DOMAIN: nblik.com
+  SUNRISE_CONSULTANCY_GOOGLE_CLIENT_ID: 192814708505-g0heok64o70uj8u5nvbalr0s9svpld3v.apps.googleusercontent.com
+  TEMPLATE_ID: nblik_videoconf_e425d837-4c68-4ad9-831b-6d485df469e7
+  THEDOGCIRCLE_GOOGLE_CLIENT_ID: 1044819264290-ju1ajlcnb1h5oek3vq07rckh532gim94.apps.googleusercontent.com
+  UP_UDYOG_GOOGLE_CLIENT_ID: 468832282744-g1tt2fjj4pcrfmo93pjs7ej7io0h2r94.apps.googleusercontent.com
+  VISHWA_BAJRANG_DAL_GOOGLE_CLIENT_ID: 850844773240-ls2utj9tnv8f0mkrpesh9p21i4p2c542.apps.googleusercontent.com
+  VOX_GOOGLE_CLIENT_ID: 1034143085092-q38ptho0fqnboc98cu8891sq3m0m74pn.apps.googleusercontent.com
+  VYAPARI_KALYAN_GOOGLE_CLIENT_ID: 800183514337-fepor6ccrturc02m07uho870bmngq9ks.apps.googleusercontent.com
 kind: ConfigMap
 metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"A1_SAMACHAAR_GOOGLE_CLIENT_ID":"631201737682-5ha3ra9qt6aekgs1m95c0ml5hnpdum0c.apps.googleusercontent.com","AKHIL_SWANTANTRA_GOOGLE_CLIENT_ID":"224181432024-7sm8obhtvdmts945o0sf50of1rgredl6.apps.googleusercontent.com","APPLICATION_URL":"https://api.nblik.com","AWS_REGION":"ap-south-1","BADGE_CREDIT":"100","BAHUJAN_SAMAJ_PARTY_GOOGLE_CLIENT_ID":"64652129366-7vj0ajavlb5chb610eeu0sncckfoqtmo.apps.googleusercontent.com","BHARAT_TIMES_GOOGLE_CLIENT_ID":"624870625956-38e5jcctklpe9pcimf0baf2g2p06nvdj.apps.googleusercontent.com","BHRASTACHAR_NEWS_GOOGLE_CLIENT_ID":"92387558743-asmps94lijtsgl467a3m7fm4rsi9q2qi.apps.googleusercontent.com","BJP_ZILA_SANJOYAK_GOOGLE_CLIENT_ID":"1035837699581-2l4ar2bhg9f60r9jacvkgujme2susfur.apps.googleusercontent.com","CHAINSUKH_JANWAR_GOOGLE_CLIENT_ID":"31435339526-pbm6ab5cbl4rrgej2oeliu1pe9m4vf4c.apps.googleusercontent.com","CLOUD_ID":"https://search-prod-nblik-45bhv3ds4du4qc6mzaq37sa5si.ap-south-1.es.amazonaws.com/","CREDIT":"50","CRIME_ASSAM_GOOGLE_CLIENT_ID":"1041893454504-dfeden5idv23g1uepgdtuplktp5ppf5b.apps.googleusercontent.com","DISCUSSIONS":"10","ELASTIC_USER":"prod_elastic2","FIREASE_TOKEN_URI":"https://oauth2.googleapis.com/token","FIREBASE_CERT_URL":"https://www.googleapis.com/oauth2/v1/certs","FIREBASE_CLIENT_CERT_URL":"https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qqwjd%40nblikk.iam.gserviceaccount.com","FIREBASE_CLIENT_ID":"116359567469435893090","FIREBASE_OAUTH_URI":"https://accounts.google.com/o/oauth2/auth","FIREBASE_PRIVATE_KEY_ID":"0ae327276c3ed993833545819a72315b18c4d157","FIREBASE_PROJECT_ID":"nblikk","FIREBASE_SERVICE_EMAIL":"firebase-adminsdk-qqwjd@nblikk.iam.gserviceaccount.com","FRONTAPP_URL":"https://www.nblik.com","GARHWAL_GOOGLE_CLIENT_ID":"826996547596-79nnqmllj0ll8095lliv67gbrr0f58tm.apps.googleusercontent.com","GCS_BUCKET":"nblickdevimages","GOOGLE_CLIENT_ID":"962951941377-lfg8rnhvbddfefc7rtaqkkafq5bd3sk7.apps.googleusercontent.com","HAJIPUR_REFRIGERATION_GOOGLE_CLIENT_ID":"700884279414-o1cnu33415ecvjvdagjc7pnf7m229k05.apps.googleusercontent.com","JANHIT_DHARMADYA_GOOGLE_CLIENT_ID":"693651760231-k8hesdr2d01dm4od4nuhinrpuujc4lgm.apps.googleusercontent.com","LADESH_RAJPUT_SANGH_GOOGLE_CLIENT_ID":"731329803320-gvs7e8gcnetk3bkts1g4td7p7sj93tgk.apps.googleusercontent.com","LANG":"en_US.UTF-8","LIVE_GOOGLE_CLIENT_ID":"1089705809623-iui1j5ivsnvbuai40169hpi23jllvj6q.apps.googleusercontent.com","LOK_JANSHAKTI_PARTY_GOOGLE_CLIENT_ID":"105126451566-jj8a35b8uqhg322tv2titophp3a7ph41.apps.googleusercontent.com","MIN_BALANCE":"100","PARINDEY_FOUNDATION_GOOGLE_CLIENT_ID":"67043347006-5tgequjafvjnupncmfmb2srdajpgf47r.apps.googleusercontent.com","POST_COMMENTS":"10","POST_COUNT":"10","POST_LIKES":"10","POST_VIEWS":"10","PROJECT_ID":"962951941377","RACK_ENV":"production","RAILS_ENV":"production","RAILS_LOG_TO_STDOUT":"enabled","RAILS_MAX_THREADS":"30","RAILS_SERVE_STATIC_FILES":"enabled","RASHTRIYA_SANGHATHAN_GOOGLE_CLIENT_ID":"1040462940102-kh0dbqveko7uclsbsumi2c1q0b0ceg7b.apps.googleusercontent.com","RASHTRIYA_YUVA_JATAV_GOOGLE_CLIENT_ID":"763312477997-401gl2q4gt8gjosask4md9a6j3d74pug.apps.googleusercontent.com","RDS_DB_NAME":"prod_nblik_db","RDS_HOSTNAME":"10.87.176.3","RDS_PORT":"5432","RDS_USERNAME":"postgres","REBUILDROOTS_GOOGLE_CLIENT_ID":"444576343505-uhpltq1e563knor83s0qb0m08isitgs0.apps.googleusercontent.com","REDIS_PROVIDER":"REDIS_URL","REDIS_URL":"redis://10.87.177.4:6379","S3_BUCKET":"nblickdevimages","SANATAN_GYAN_SANSTHAN_GOOGLE_CLIENT_ID":"677690896381-8h2uun5ur8tf4g5vq1bu64h3tjosisk5.apps.googleusercontent.com","SEHYOG_WELFARE_FOUNDATION_GOOGLE_CLIENT_ID":"1029579395492-av1lgqsc6u7e13gt6u87bc0qj9og9eth.apps.googleusercontent.com","SHEMATTERS_GOOGLE_CLIENT_ID":"893715447461-j4aebinhg80a7m6ldo9a4c3vnlatqtdg.apps.googleusercontent.com","SHIVA_RLP_GOOGLE_CLIENT_ID":"436202980965-4hj4ch6ooljojog8hdu14fvull0t7kg0.apps.googleusercontent.com","SHIVSENA_THAKRE_GOOGLE_CLIENT_ID":"358433722539-srds7fsf0h85k0m8ctcuv8ck0qckb639.apps.googleusercontent.com","SMTP_ADDRESS":"email-smtp.ap-south-1.amazonaws.com","SMTP_DOMAIN":"nblik.com","SUNRISE_CONSULTANCY_GOOGLE_CLIENT_ID":"192814708505-g0heok64o70uj8u5nvbalr0s9svpld3v.apps.googleusercontent.com","TEMPLATE_ID":"nblik_videoconf_e425d837-4c68-4ad9-831b-6d485df469e7","THEDOGCIRCLE_GOOGLE_CLIENT_ID":"1044819264290-ju1ajlcnb1h5oek3vq07rckh532gim94.apps.googleusercontent.com","VISHWA_BAJRANG_DAL_GOOGLE_CLIENT_ID":"850844773240-ls2utj9tnv8f0mkrpesh9p21i4p2c542.apps.googleusercontent.com","VOX_GOOGLE_CLIENT_ID":"1034143085092-q38ptho0fqnboc98cu8891sq3m0m74pn.apps.googleusercontent.com"},"kind":"ConfigMap","metadata":{"annotations":{},"labels":{"app":"api-backend"},"name":"api-backend-config-ccmj","namespace":"nblik"}}
+  creationTimestamp: "2023-06-27T16:46:57Z"
   labels:
     app: api-backend
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:A1_SAMACHAAR_GOOGLE_CLIENT_ID: {}
+        f:AKHIL_SWANTANTRA_GOOGLE_CLIENT_ID: {}
+        f:APPLICATION_URL: {}
+        f:AWS_REGION: {}
+        f:BADGE_CREDIT: {}
+        f:BAHUJAN_SAMAJ_PARTY_GOOGLE_CLIENT_ID: {}
+        f:BHARAT_TIMES_GOOGLE_CLIENT_ID: {}
+        f:BHRASTACHAR_NEWS_GOOGLE_CLIENT_ID: {}
+        f:BJP_ZILA_SANJOYAK_GOOGLE_CLIENT_ID: {}
+        f:CHAINSUKH_JANWAR_GOOGLE_CLIENT_ID: {}
+        f:CLOUD_ID: {}
+        f:CREDIT: {}
+        f:CRIME_ASSAM_GOOGLE_CLIENT_ID: {}
+        f:DISCUSSIONS: {}
+        f:ELASTIC_USER: {}
+        f:FIREASE_TOKEN_URI: {}
+        f:FIREBASE_CERT_URL: {}
+        f:FIREBASE_CLIENT_CERT_URL: {}
+        f:FIREBASE_CLIENT_ID: {}
+        f:FIREBASE_OAUTH_URI: {}
+        f:FIREBASE_PRIVATE_KEY_ID: {}
+        f:FIREBASE_PROJECT_ID: {}
+        f:FIREBASE_SERVICE_EMAIL: {}
+        f:FRONTAPP_URL: {}
+        f:GARHWAL_GOOGLE_CLIENT_ID: {}
+        f:GCS_BUCKET: {}
+        f:GOOGLE_CLIENT_ID: {}
+        f:HAJIPUR_REFRIGERATION_GOOGLE_CLIENT_ID: {}
+        f:JANHIT_DHARMADYA_GOOGLE_CLIENT_ID: {}
+        f:LADESH_RAJPUT_SANGH_GOOGLE_CLIENT_ID: {}
+        f:LANG: {}
+        f:LIVE_GOOGLE_CLIENT_ID: {}
+        f:LOK_JANSHAKTI_PARTY_GOOGLE_CLIENT_ID: {}
+        f:MIN_BALANCE: {}
+        f:PARINDEY_FOUNDATION_GOOGLE_CLIENT_ID: {}
+        f:POST_COMMENTS: {}
+        f:POST_COUNT: {}
+        f:POST_LIKES: {}
+        f:POST_VIEWS: {}
+        f:PROJECT_ID: {}
+        f:RACK_ENV: {}
+        f:RAILS_ENV: {}
+        f:RAILS_LOG_TO_STDOUT: {}
+        f:RAILS_MAX_THREADS: {}
+        f:RAILS_SERVE_STATIC_FILES: {}
+        f:RASHTRIYA_SANGHATHAN_GOOGLE_CLIENT_ID: {}
+        f:RASHTRIYA_YUVA_JATAV_GOOGLE_CLIENT_ID: {}
+        f:RDS_DB_NAME: {}
+        f:RDS_HOSTNAME: {}
+        f:RDS_PORT: {}
+        f:RDS_USERNAME: {}
+        f:REBUILDROOTS_GOOGLE_CLIENT_ID: {}
+        f:REDIS_PROVIDER: {}
+        f:REDIS_URL: {}
+        f:S3_BUCKET: {}
+        f:SANATAN_GYAN_SANSTHAN_GOOGLE_CLIENT_ID: {}
+        f:SEHYOG_WELFARE_FOUNDATION_GOOGLE_CLIENT_ID: {}
+        f:SHEMATTERS_GOOGLE_CLIENT_ID: {}
+        f:SHIVA_RLP_GOOGLE_CLIENT_ID: {}
+        f:SHIVSENA_THAKRE_GOOGLE_CLIENT_ID: {}
+        f:SMTP_ADDRESS: {}
+        f:SMTP_DOMAIN: {}
+        f:SUNRISE_CONSULTANCY_GOOGLE_CLIENT_ID: {}
+        f:TEMPLATE_ID: {}
+        f:THEDOGCIRCLE_GOOGLE_CLIENT_ID: {}
+        f:VISHWA_BAJRANG_DAL_GOOGLE_CLIENT_ID: {}
+        f:VOX_GOOGLE_CLIENT_ID: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+        f:labels:
+          .: {}
+          f:app: {}
+    manager: kubectl-client-side-apply
+    operation: Update
+    time: "2023-06-29T04:40:32Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:AKHIL_DIGAMBAR_GOOGLE_CLIENT_ID: {}
+        f:BHARTIYA_SAMAJ_SEWA_GOOGLE_CLIENT_ID: {}
+        f:DIA_ARC_GOOGLE_CLIENT_ID: {}
+        f:JAAGA_VANSH_GOOGLE_CLIENT_ID: {}
+        f:MAA_VINA_GOOGLE_CLIENT_ID: {}
+        f:UP_UDYOG_GOOGLE_CLIENT_ID: {}
+        f:VYAPARI_KALYAN_GOOGLE_CLIENT_ID: {}
+    manager: GoogleCloudConsole
+    operation: Update
+    time: "2023-08-15T02:44:40Z"
   name: api-backend-config-ccmj
   namespace: nblik
+  resourceVersion: "56814883"
+  uid: f60bdee8-5e58-4301-8fd2-8b861b789688
